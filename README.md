@@ -5,13 +5,6 @@ A Task Management Application where users can add, edit, delete, and reorder tas
 
 ---
 
-## Live Links
-- *Live Demo:* [Your Deployed Link Here]
-- *Frontend Repository:* [Frontend GitHub Link]
-- *Backend Repository:* [Backend GitHub Link]
-
----
-
 ## Dependencies
 ### Frontend
 - *React* (Vite.js)
@@ -35,3 +28,5 @@ A Task Management Application where users can add, edit, delete, and reorder tas
    ```sh
    git clone [Backend Repository Link]
    cd backend
+```
+   ## Live Links
