@@ -29,5 +29,5 @@ A Task Management Application where users can add, edit, delete, and reorder tas
    git clone https://github.com/Johora99/Task-Managment-Client.git
 ```
 ## Live Site
-[Click here to visit the live site](https://task-managment-client.onrender.com)
+https://task-managment-client.onrender.com
 
