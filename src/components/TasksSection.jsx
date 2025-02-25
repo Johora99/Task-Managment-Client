@@ -127,7 +127,7 @@ const TasksSection = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 mt-10">
       <div className="flex flex-wrap gap-3 mb-6">
         <input
           type="text"
@@ -135,7 +135,7 @@ const TasksSection = () => {
           placeholder="Enter Task Title"
           value={newEntry.title}
           onChange={handleInputChange}
-          className="p-2 border rounded-md w-1/4"
+          className="p-2 border border-teal-500 rounded-md w-1/4"
         />
         <input
           type="text"
@@ -143,13 +143,13 @@ const TasksSection = () => {
           placeholder="Task Description"
           value={newEntry.description}
           onChange={handleInputChange}
-          className="p-2 border rounded-md w-1/3"
+          className="p-2 border border-teal-500 rounded-md w-1/3"
         />
         <select
           name="category"
           value={newEntry.category}
           onChange={handleInputChange}
-          className="p-2 border cursor-pointer rounded-md"
+          className="p-2 border border-teal-500 cursor-pointer rounded-md"
         >
           {taskCategories.map((cat) => (
             <option key={cat} value={cat} className="cursor-pointer">
@@ -159,7 +159,7 @@ const TasksSection = () => {
         </select>
         <button
           onClick={handleTaskCreation}
-          className="bg-green-500 cursor-pointer text-white px-4 py-2 rounded-lg"
+          className="bg-teal-500 cursor-pointer text-white px-4 py-2 rounded-lg"
         >
           Add Task
         </button>
@@ -173,7 +173,7 @@ const TasksSection = () => {
                 <div
                   ref={provided.innerRef}
                   {...provided.droppableProps}
-                  className="bg-gray-400 p-5  rounded-lg shadow-lg min-h-[300px]"
+                  className="bg-teal-200 p-5  rounded-lg shadow-lg min-h-[300px]"
                 >
                   <h2 className="text-xl font-bold mb-4">{category}</h2>
                   {taskList
@@ -189,7 +189,7 @@ const TasksSection = () => {
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            className="bg-black p-4 mb-3 rounded-lg shadow-md flex justify-between items-center"
+                            className="bg-white p-4 mb-3 rounded-lg shadow-md flex justify-between items-center"
                           >
                             {editEntry?._id === task._id ? (
                               <div className="flex flex-col gap-2 w-full">
@@ -202,7 +202,7 @@ const TasksSection = () => {
                                       title: e.target.value,
                                     })
                                   }
-                                  className="border p-1 rounded-md"
+                                  className="border border-teal-500 p-1 rounded-md"
                                 />
                                 <input
                                   type="text"
@@ -213,18 +213,18 @@ const TasksSection = () => {
                                       description: e.target.value,
                                     })
                                   }
-                                  className="border p-1 rounded-md"
+                                  className="border border-teal-500 p-1 rounded-md"
                                 />
                               </div>
                             ) : (
                               <div className="">
-                                <h3 className="font-semibold text-white">
+                                <h3 className="font-semibold text-black">
                                   {task.title}
                                 </h3>
-                                <p className="text-sm text-white">
+                                <p className="text-sm text-black">
                                   {task.description}
                                 </p>
-                                <p className="text-xs text-gray-200">
+                                <p className="text-xs text-black">
                                   {formatDate(task.createdAt)}
                                 </p>
                               </div>
@@ -240,7 +240,7 @@ const TasksSection = () => {
                                 />
                               ) : (
                                 <FiEdit
-                                  className="text-blue-500 cursor-pointer"
+                                  className="text-teal-500 cursor-pointer"
                                   onClick={() => handleEdit(task)}
                                 />
                               )}

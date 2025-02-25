@@ -20,9 +20,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-100">
-      <div className="p-8 bg-white shadow-md rounded-lg text-center w-80">
-        <h2 className="text-2xl font-bold mb-4 text-gray-700">
+    <div className="flex h-screen items-center justify-center">
+      <div className="p-8 bg-teal-200 shadow-md rounded-lg text-center w-80">
+        <h2 className="text-2xl font-bold mb-4 text-black">
           Login To Task Management
         </h2>
         <p className="text-gray-500 mb-6">Manage your tasks efficiently</p>
