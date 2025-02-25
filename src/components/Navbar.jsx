@@ -44,7 +44,7 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             `flex text-lg items-center gap-2 hover:text-gray-300 ${
-              isActive ? "text-teal-200" : " text-white"
+              isActive ? "text-teal-500" : " text-white"
             }`
           }
         >
@@ -56,7 +56,7 @@ const Navbar = () => {
           to="/tasks"
           className={({ isActive }) =>
             `flex text-lg items-center gap-2 hover:text-gray-300 ${
-              isActive ? "text-teal-200" : " text-white "
+              isActive ? "text-teal-500" : " text-white "
             }`
           }
         >
@@ -75,7 +75,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
            <img src={logo} alt="" className="w-16"/>
           <p className="text-2xl font-bold">
-            Task<span className="text-teal-200">Nest</span>
+            Task<span className="text-teal-500">Nest</span>
           </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ const Navbar = () => {
               </div>
             ) : (
               <div className="flex items-center gap-2">
-                <Link className="text-lg border-[1px] border-teal-200 px-5 py-2 rounded-lg mr-2" to="/login">
+                <Link className="text-lg border-[1px] border-teal-500 px-5 py-2 rounded-lg mr-2" to="/login">
                   Login
                 </Link>
               </div>

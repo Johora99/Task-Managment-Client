@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import logo from "/Taskly-logo.webp";
+import logo from "../assets/icons8-task-100.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -9,21 +9,21 @@ const Home = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-black">
+    <div className="h-screen flex flex-col bg-white">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center h-4/5 text-center text-white">
         <img
-          src="https://img.icons8.com/?size=100&id=9LCcCoTYXaRk&format=png&color=000000"
+          src={logo}
           alt="Taskly Logo"
-          className="w-48 h-48 object-cover rounded-full mb-8 shadow-lg"
+          className="w-48 h-48 object-cover rounded-full mb-8 shadow-lg border-[2px] border-teal-200"
         />
-        <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
+        <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg text-teal-500">
           Welcome to Task Managment App
         </h1>
-        <p className="text-xl mb-6 opacity-90 drop-shadow-md">
+        <p className="text-xl mb-6 opacity-90 drop-shadow-md text-teal-500">
           Your personal task management solution for seamless productivity.
         </p>
-        <button onClick={handleGetStarted} className="btn btn-primary">
+        <button onClick={handleGetStarted} className="border-[1px] border-teal-500 text-black px-5 py-2 rounded-lg text-2xl">
           Add Todo
         </button>
       </section>

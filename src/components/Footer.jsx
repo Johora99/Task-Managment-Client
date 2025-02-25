@@ -1,5 +1,5 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-
+import logo from '../assets/icons8-task-100.png'
 const Footer = () => {
   return (
     <footer className="bg-black border-t text-white py-10">
@@ -8,19 +8,21 @@ const Footer = () => {
           {/* Left side: Logo and company info */}
           <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
             <img
-              src="https://img.icons8.com/?size=100&id=9LCcCoTYXaRk&format=png&color=000000"
+              src={logo}
               alt="Taskly Logo"
               className="w-20 h-20 rounded-full object-cover mb-4"
             />
-            <p className="font-semibold text-lg mb-2">Task Management.</p>
-            <p className="text-sm text-gray-400">
+            <p className="text-2xl font-bold">
+            Task<span className="text-teal-500">Nest</span>
+          </p>
+            <p className="text-sm">
               Providing solutions to your productivity problems
             </p>
           </div>
 
           {/* Center: Quick links */}
           <div className="w-full sm:w-1/3 text-center mb-6 sm:mb-0">
-            <h3 className="font-semibold text-xl mb-3">Quick Links</h3>
+            <h3 className="font-semibold text-xl mb-3 text-teal-500">Quick Links</h3>
             <ul>
               <li>
                 <a href="/" className="hover:text-gray-300">
@@ -43,25 +45,25 @@ const Footer = () => {
 
           {/* Right side: Social Media Icons */}
           <div className="w-full sm:w-1/3 text-center">
-            <h3 className="font-semibold text-xl mb-3">Follow Us</h3>
+            <h3 className="font-semibold text-xl mb-3 text-teal-500">Follow Us</h3>
             <div className="flex justify-center gap-6">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className=" hover:text-teal-500">
                 <FaFacebook size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className=" hover:text-teal-500">
                 <FaTwitter size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className=" hover:text-teal-500">
                 <FaLinkedin size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className=" hover:text-teal-500">
                 <FaGithub size={24} />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-6 text-center text-gray-500 text-sm">
+        <div className="mt-6 text-center text-sm">
           <p>
             Copyright © {new Date().getFullYear()} - Task Management. All rights
             reserved.
