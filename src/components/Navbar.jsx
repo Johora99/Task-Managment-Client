@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { FiLogOut, FiMenu, FiX } from "react-icons/fi";
-
+import logo from '../assets/icons8-task-100.png'
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
@@ -43,8 +43,8 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `flex items-center gap-2 hover:text-gray-300 ${
-              isActive ? "text-blue-500" : " text-black "
+            `flex text-lg items-center gap-2 hover:text-gray-300 ${
+              isActive ? "text-teal-200" : " text-white"
             }`
           }
         >
@@ -55,8 +55,8 @@ const Navbar = () => {
         <NavLink
           to="/tasks"
           className={({ isActive }) =>
-            `flex items-center gap-2 hover:text-gray-300 ${
-              isActive ? "text-blue-500" : " text-black "
+            `flex text-lg items-center gap-2 hover:text-gray-300 ${
+              isActive ? "text-teal-200" : " text-white "
             }`
           }
         >
@@ -68,13 +68,16 @@ const Navbar = () => {
 
   return (
     //{`${theme? "text-black" : "text-white"}`}
-    <nav className="fixed top-0 w-full z-50 bg-white text-black shadow-md">
+    <nav className="fixed top-0 w-full z-50 bg-black text-white shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-xl font-bold flex items-center">
           <p className="text-black text-3xl mx-auto mr-1"></p>
-          <p>
-            Task--<span>Management</span>
+          <div className="flex items-center gap-3">
+           <img src={logo} alt="" className="w-16"/>
+          <p className="text-2xl font-bold">
+            Task<span className="text-teal-200">Nest</span>
           </p>
+          </div>
         </div>
         <ul className="hidden lg:flex gap-8">{links}</ul>
 
@@ -117,8 +120,8 @@ const Navbar = () => {
                 </ul>
               </div>
             ) : (
-              <div className="rounded-full flex items-center gap-2">
-                <Link className="btn btn-outline mr-2" to="/login">
+              <div className="flex items-center gap-2">
+                <Link className="text-lg border-[1px] border-teal-200 px-5 py-2 rounded-lg mr-2" to="/login">
                   Login
                 </Link>
               </div>

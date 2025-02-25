@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="inter">
       <div className="h-[72px]">
         <Navbar />
       </div>
