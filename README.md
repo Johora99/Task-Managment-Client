@@ -23,10 +23,10 @@ A Task Management Application where users can add, edit, delete, and reorder tas
 ---
 
 ## Installation Steps
-### Backend Setup
+### Frontend Setup
 1. Clone the backend repository:
    ```sh
-   git clone [Backend Repository Link]
+   git clone https://github.com/Johora99/Task-Mangement-Server.git
    cd backend
 ```
    ## Live Links
